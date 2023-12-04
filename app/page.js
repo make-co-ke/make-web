@@ -58,7 +58,31 @@ function Home() {
         </div>
       </div>
 
-      <div class="row">Unseen potential </div>
+      <div class="grid grid-cols-3 gap-4 ">
+        <div className="col-span-1">
+          <Image src="/assets/images/3d__2.png" width={391} height={407} />
+        </div>
+        <div className="col-span-2 __statement__section">
+          <h1 className="__title">
+            The Unseen Potential of Building Your Next Idea with Us
+          </h1>
+
+          <p className="__text">
+            Dive into a world where innovation knows no bounds, and every
+            project is tailor-made to reflect the uniqueness of your vision. Our
+            expertise in web and mobile application development is not just
+            about technology – it's about pioneering the digital frontier. By
+            choosing us, you gain a partner with a stealthy approach to support,
+            working tirelessly behind the scenes to ensure your success. From
+            conception to execution, we are dedicated to revealing the hidden
+            gems within your idea
+          </p>
+
+          <Link href="/" className="__action action__solid __btn__margin">
+            Read more
+          </Link>
+        </div>
+      </div>
       <div class="row">Statistics</div>
       <div class="row">Tech stacks</div>
       <div class="row">JUst picture it</div>

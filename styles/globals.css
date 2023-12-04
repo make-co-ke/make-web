@@ -127,6 +127,7 @@
 }
 
 .__btn__margin {
+  margin: 20px 0;
   gap: 10px;
 }
 
@@ -204,4 +205,30 @@
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
+}
+.__statement__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 60px 144px;
+}
+
+.__title {
+  color: var(--neutral-d-grey);
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.__text {
+  align-self: stretch;
+  color: var(--neutral-grey);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
