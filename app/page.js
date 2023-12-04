@@ -1,7 +1,8 @@
-import React from "react";
+import "@styles/globals.css";
+import Image from "next/image";
 
 function Home() {
-  return <div className="main">page</div>;
+  return <div className="main"></div>;
 }
 
 export default Home;
