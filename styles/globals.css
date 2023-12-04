@@ -11,6 +11,7 @@
   --default-white: #fff;
   --neutral-d-grey: #4d4d4d;
   --neutral-grey: #717171;
+  --neutral-black: #263238;
 
   /* Colors */
   --brand-primary: #82f49d;
@@ -158,6 +159,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  max-width: 400px;
 }
 
 .__services {
@@ -231,4 +233,104 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.__stats {
+  display: flex;
+  width: 100%;
+  padding: 64px 144px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--neutral-silver);
+}
+
+.__title__section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 60px 0;
+}
+
+.__blog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.__blog__image {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.__blog__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: -60px;
+  z-index: 1;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--neutral-silver);
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+}
+
+.__blog__title {
+  width: 200px;
+  color: var(--neutral-grey);
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.__ablog_action {
+  color: var(--brand-primary);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+
+.__blog__section {
+  margin: 60px 0;
+}
+
+.__post_1 {
+  background: url("/assets/images/image 18.png"),
+    lightgray 50% / cover no-repeat;
+}
+.__post_2 {
+  background: url("/assets/images/image 19.png"),
+    lightgray 50% / cover no-repeat;
+}
+.__post_3 {
+  background: url("/assets/images/image 20.png"),
+    lightgray 50% / cover no-repeat;
+}
+
+.__sign_off_text {
+  width: 70%;
+  color: var(--neutral-black, #263238);
+  text-align: center;
+  font-family: Inter;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76px;
+  margin: 60px auto;
+}
+
+.__footer {
+  display: flex;
+  padding: 64px 165px;
+  align-items: flex-start;
+  gap: 125px;
+  background: var(--neutral-black, #263238);
 }

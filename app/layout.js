@@ -14,7 +14,7 @@ function Root({ children }) {
         <main id="root">
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </main>
       </body>
     </html>

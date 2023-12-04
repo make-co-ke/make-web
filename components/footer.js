@@ -2,14 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer">
-      {/* <div className="footer__logo">
-        <div>LOgo</div>
-        <p className="copy__right">Copyright © 2023 Make ltd.</p>
-        <p className="copy__right">All rights reserved</p>
-        <div>Socials</div>
-      </div>
-      <div className="footer__menu">Menu items</div> */}
+    <div className="__footer grid grid-cols-3 gap-4">
+      <div className="col-span-1"></div>
+      <div className="col-span-2"></div>
     </div>
   );
 }
