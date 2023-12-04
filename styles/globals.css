@@ -9,6 +9,8 @@
   /* Natural */
   --neutral-silver: #f5f7fa;
   --default-white: #fff;
+  --neutral-d-grey: #4d4d4d;
+  --neutral-grey: #717171;
 
   /* Colors */
   --brand-primary: #82f49d;
@@ -28,6 +30,9 @@
   align-items: center;
   padding: 0 60px;
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .menu {
@@ -76,4 +81,48 @@
 .action__solid {
   color: var(--default-white);
   background: var(--brand-primary);
+}
+
+/* .__barner {
+  background: var(--neutral-silver);
+} */
+
+.__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 60px;
+  height: 100vh;
+}
+
+.intro__text {
+  color: var(--neutral-d-grey);
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76px;
+}
+
+.intro__text__light {
+  color: var(--brand-primary);
+}
+
+.intro__text__2 {
+  color: var(--neutral-grey);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.__intro__image__wrapper {
+  align-items: center;
+}
+
+.__btn__margin {
+  gap: 10px;
 }
