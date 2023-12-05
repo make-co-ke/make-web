@@ -12,6 +12,7 @@
   --neutral-d-grey: #4d4d4d;
   --neutral-grey: #717171;
   --neutral-black: #263238;
+  --neutral-white: #fff;
 
   /* Colors */
   --brand-primary: #82f49d;
@@ -263,7 +264,6 @@
   width: 300px;
   height: 200px;
   border-radius: 8px;
-  position: relative;
 }
 
 .__blog__content {
@@ -272,7 +272,6 @@
   align-items: center;
   gap: 16px;
   margin-top: -60px;
-  z-index: 1;
   padding: 16px;
   border-radius: 8px;
   background: var(--neutral-silver);
@@ -331,6 +330,110 @@
   display: flex;
   padding: 64px 165px;
   align-items: flex-start;
+  flex-direction: row;
+  /* justify-content: space-between; */
   gap: 125px;
   background: var(--neutral-black, #263238);
+}
+
+.__footer__text {
+  color: var(--neutral-silver);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.__footer__logo {
+  width: 191px;
+  height: 46px;
+}
+
+.__footer__socials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.__footer__basic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  /* min-width: 30%; */
+}
+
+.__footer__menu {
+  width: 100%;
+}
+
+.__footer__sections__title {
+  color: var(--neutral-white);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.__footer__menu__item {
+  color: var(--neutral-silver);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.__footer__menu__wrapper {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.__subscribe__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: var(--default-white);
+  border-radius: 8px;
+  opacity: 0.2;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.__subscribe__form input {
+  width: calc(100% - 40px) !important;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: inherit;
+}
+
+.__subscribe__btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+
+.__subscribe__btn i {
+  font-size: 25px;
+}
+
+.__footer__social {
+  font-size: 20px;
 }
