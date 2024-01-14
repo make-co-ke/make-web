@@ -30,7 +30,7 @@ function Home() {
         <p className="__title__description">
           We are transforming vision into a digital reality
         </p>
-        <div className="columns-3 __services">
+        <div className="flex flex-col md:flex-row columns-3 __services">
           <div className="__service__card">
             <div className="icon"></div>
             <p className="__service__title">Innovative Product Development</p>
@@ -58,11 +58,11 @@ function Home() {
         </div>
       </div>
 
-      <div class="grid grid-cols-3 gap-4 ">
-        <div className="col-span-1">
+      <div class="grid grid-col-1 md:grid-cols-3 gap-4">
+        <div className="col-span-1 object-center">
           <Image src="/assets/images/3d__2.png" width={391} height={407} />
         </div>
-        <div className="col-span-2 __statement__section">
+        <div className="col-span-2 __statement__section ms:p-23">
           <h1 className="__title">
             The Unseen Potential of Building Your Next Idea with Us
           </h1>
@@ -91,15 +91,15 @@ function Home() {
         </p>
         <div>Statistics</div>
       </div>
-      <div class="grid grid-cols-3 gap-4 ">
-        <div className="col-span-1">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+        <div className="col-span-1 object-center">
           <Image src="/assets/images/3d__3.png" width={391} height={407} />
         </div>
         <div className="col-span-2 __statement__section">
           <h1 className="__title">Our Tech Stacks</h1>
 
           <p className="__text">
-            We’re technology agnostic, but we have a propensity to leverage lean
+            We&apos;re technology agnostic, but we have a propensity to leverage lean
             tools that are best suited to get the job done. Our systems are
             built leveraging various frameworks , but the most established are
             React, Next js, Kotlin, Flutter and React native, with Flask and
@@ -120,9 +120,9 @@ function Home() {
             strategies, trends, and success stories
           </p>
 
-          <div className="columns-3 __blog__section">
+          <div className="columns-3 __blog__section flex sm:flex-col md:flex-row">
             <div className="__blog__card">
-              <div className="__blog__image __post_1"></div>
+              <div className="__blog__image __post_1 sm:w-96"></div>
               <div className="__blog__content">
                 <p className="__blog__title">
                   Creating Streamlined Safeguarding Processes with OneRen
@@ -133,7 +133,7 @@ function Home() {
               </div>
             </div>
             <div className="__blog__card">
-              <div className="__blog__image __post_1"></div>
+              <div className="__blog__image __post_1 sm:w-96"></div>
               <div className="__blog__content">
                 <p className="__blog__title">
                   Creating Streamlined Safeguarding Processes with OneRen
@@ -144,9 +144,9 @@ function Home() {
               </div>
             </div>
             <div className="__blog__card">
-              <div className="__blog__image __post_1"></div>
+              <div className="__blog__image __post_1 sm:w-96"></div>
               <div className="__blog__content">
-                <p className="__blog__title">
+                <p className="__blog__title ">
                   Creating Streamlined Safeguarding Processes with OneRen
                 </p>
                 <Link href="/" className="__ablog_action ">

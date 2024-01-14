@@ -12,14 +12,15 @@ function Footer() {
   }
 
   return (
-    <div className="__footer grid grid-cols-4 gap-4">
-      <div className="col-span-1 __footer__basic">
-        <div className="__footer__logo">
+    // __footer 
+    <div className="bg-slate-800 flex flex-col md:flex-row justify-around p-3 md:p-9">
+      <div className="text-left">
+        <div className="object-center">
           <Image src="/assets/site/logo.png" width={110} height={100} />
         </div>
-        <p className="__footer__text">Copyright © 2023 Make ltd.</p>
-        <p className="__footer__text">All rights reserved</p>
-        <div className="__footer__socials">
+        <p className="text-center md:text-left text-white p-2">Copyright © 2023 Make ltd.</p>
+        <p className="text-center text-white">All rights reserved</p>
+        <div className="flex flex-row justify-center align-middle">
           <Link href="/" className="__footer__menu__item __footer__social">
             <i class="bx bxl-facebook-circle"></i>
           </Link>
@@ -33,10 +34,9 @@ function Footer() {
             <i class="bx bxl-dribbble"></i>
           </Link>
         </div>
+        <hr className="md:hidden w-10" />
       </div>
-      <div className="col-span-2">
-        <div className="grid grid-cols-3 gap-4  __footer__menu">
-          <div className="__footer__menu__wrapper ">
+      <div className="sm:text-center md:text-left flex flex-col p-2">
             <h1 className="__footer__sections__title">Company</h1>
             <Link href="/" className="__footer__menu__item">
               About us
@@ -50,8 +50,8 @@ function Footer() {
             <Link href="/" className="__footer__menu__item">
               Pricing
             </Link>
-          </div>
-          <div className="__footer__menu__wrapper ">
+      </div>
+      <div className="sm:text-center md:text-left flex flex-col p-2">
             <h1 className="__footer__sections__title">Support</h1>
             <Link href="/" className="__footer__menu__item">
               Help center
@@ -75,6 +75,7 @@ function Footer() {
                   type="text"
                   name="name"
                   placeholder="Your email address"
+                  className="placeholder:text-slate-600"
                 />
                 <button type="submit" className="__subscribe__btn">
                   <i class="bx bx-paper-plane"></i>
@@ -82,8 +83,13 @@ function Footer() {
               </div>
             </form>
           </div>
+      {/* <div className="col-span-2">
+        <div className="grid grid-cols-3 gap-4  __footer__menu">
+
+
+
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
