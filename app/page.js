@@ -93,12 +93,13 @@ function Home() {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         <div className="col-span-1 object-center">
-          <Image src="/assets/images/3d__3.png" width={391} height={407} />
+          <Image src="/assets/images/3d__3.png" width={391} height={407} className="w-full" />
         </div>
-        <div className="col-span-2 __statement__section">
+        {/* __statement__section sm:p-40 sm:text-center*/}
+        <div className="col-span-2 sm:px-40 sm:py-20 sm:text-center md:text-left">
           <h1 className="__title">Our Tech Stacks</h1>
 
-          <p className="__text">
+          <p className="__text sm:py-20 leading-loose">
             We&apos;re technology agnostic, but we have a propensity to leverage lean
             tools that are best suited to get the job done. Our systems are
             built leveraging various frameworks , but the most established are
@@ -107,9 +108,12 @@ function Home() {
             quality of work, and productivity.
           </p>
 
-          <Link href="/" className="__action action__solid __btn__margin">
-            Read more
-          </Link>
+          {/* __action action__solid __btn__margin */}
+          <div className="flex flex-col items-center justify-center md:justify-start">
+            <Link href="/" className="__action action__solid __btn__margin w-32 sm:text-center">
+              Read more
+            </Link>
+          </div>
         </div>
       </div>
       <div className="row">
