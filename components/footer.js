@@ -22,16 +22,16 @@ function Footer() {
         <p className="text-center text-white">All rights reserved</p>
         <div className="flex flex-row justify-center align-middle">
           <Link href="/" className="__footer__menu__item __footer__social">
-            <i class="bx bxl-facebook-circle"></i>
+            <i className="bx bxl-facebook-circle"></i>
           </Link>
           <Link href="/" className="__footer__menu__item __footer__social">
-            <i class="bx bxl-linkedin-square"></i>
+            <i className="bx bxl-linkedin-square"></i>
           </Link>
           <Link href="/" className="__footer__menu__item __footer__social">
-            <i class="bx bxl-twitter"></i>
+            <i className="bx bxl-twitter"></i>
           </Link>
           <Link href="/" className="__footer__menu__item __footer__social">
-            <i class="bx bxl-dribbble"></i>
+            <i className="bx bxl-dribbble"></i>
           </Link>
         </div>
         <hr className="md:hidden w-10" />
@@ -78,7 +78,7 @@ function Footer() {
                   className="placeholder:text-slate-600"
                 />
                 <button type="submit" className="__subscribe__btn">
-                  <i class="bx bx-paper-plane"></i>
+                  <i className="bx bx-paper-plane"></i>
                 </button>
               </div>
             </form>

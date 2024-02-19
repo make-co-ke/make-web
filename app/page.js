@@ -5,8 +5,8 @@ import boxicons from "boxicons/css/boxicons.min.css";
 
 function Home() {
   return (
-    <div class="container mx-auto px-4">
-      <div class="columns-2 __barner">
+    <div className="container mx-auto px-4">
+      <div className="columns-2 __barner">
         <div className="w-full  __intro">
           <p className="intro__text">
             Transforming vision
@@ -22,10 +22,10 @@ function Home() {
           </Link>
         </div>
         <div className="w-full __intro __intro__image__wrapper ">
-          <Image src="/assets/images/3d__1.png" width={391} height={407} />
+          <Image alt="image" src="/assets/images/3d__1.png" width={391} height={407} />
         </div>
       </div>
-      <div class="__title_section">
+      <div className="__title_section">
         <h1 className="__heading__2">What we do.</h1>
         <p className="__title__description">
           We are transforming vision into a digital reality
@@ -58,9 +58,9 @@ function Home() {
         </div>
       </div>
 
-      <div class="grid grid-col-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-col-1 md:grid-cols-3 gap-4">
         <div className="col-span-1 object-center">
-          <Image src="/assets/images/3d__2.png" width={391} height={407} />
+          <Image alt="image" src="/assets/images/3d__2.png" width={391} height={407} />
         </div>
         <div className="col-span-2 __statement__section ms:p-23">
           <h1 className="__title">
@@ -91,9 +91,9 @@ function Home() {
         </p>
         <div>Statistics</div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         <div className="col-span-1 object-center">
-          <Image src="/assets/images/3d__3.png" width={391} height={407} className="w-full" />
+          <Image alt="image" src="/assets/images/3d__3.png" width={391} height={407} className="w-full" />
         </div>
         {/* __statement__section sm:p-40 sm:text-center*/}
         <div className="col-span-2 sm:px-40 sm:py-20 sm:text-center md:text-left">
