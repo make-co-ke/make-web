@@ -2,11 +2,13 @@ import "@styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import boxicons from "boxicons/css/boxicons.min.css";
+import Hero from "@components/Hero";
 
 function Home() {
   return (
     <div className="container mx-auto px-4">
-      <div className="columns-2 __barner">
+      <Hero />
+      {/* <div className="columns-2 __barner">
         <div className="w-full  __intro">
           <p className="intro__text">
             Transforming vision
@@ -24,32 +26,33 @@ function Home() {
         <div className="w-full __intro __intro__image__wrapper ">
           <Image alt="image" src="/assets/images/3d__1.png" width={391} height={407} />
         </div>
-      </div>
-      <div className="__title_section">
-        <h1 className="__heading__2">What we do.</h1>
-        <p className="__title__description">
-          We are transforming vision into a digital reality
-        </p>
-        <div className="flex flex-col md:flex-row columns-3 __services">
-          <div className="__service__card">
-            <div className="icon"></div>
-            <p className="__service__title">Innovative Product Development</p>
-            <p className="__text__natural">
+      </div> */}
+      <div className="">
+        <div className="w-full text-center">
+          <h1 className="text-3xl font-bold">What we do.</h1>
+          <p className="text-secondary-200">
+            We are transforming vision into a digital reality
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-1">
+          <div className="shadow-md rounded-md flex flex-col gap-3 m-auto p-16 min-h-full">
+            <p className="text-3xl font-bold text-center">Innovative Product Development</p>
+            <p className="text-center text-secondary-200 text-sm">
               Crafting cutting-edge solutions through our own product
               innovations, staying at the forefront of technology trends.
             </p>
           </div>
-          <div className="__service__card">
-            <p className="__service__title">Software Development</p>
-            <p className="__text__natural">
+          <div className="shadow-md rounded-md flex flex-col gap-3 m-auto p-20 min-h-full">
+            <p className="text-3xl font-bold text-center">Software Development</p>
+            <p className="text-center text-secondary-200 text-sm">
               We partner with businesses to transform their ideas into a digital
               reality. We build the technology needed for sustained growth and
               success.
             </p>
           </div>
-          <div className="__service__card">
-            <p className="__service__title">Search Engine Optimization</p>
-            <p className="__text__natural">
+          <div className="shadow-md rounded-md flex flex-col gap-3 m-auto p-20 min-h-full">
+            <p className="text-3xl font-bold text-center ">Search Engine Optimization</p>
+            <p className="text-center text-secondary-200 text-sm">
               Collaborating with businesses ensuring seamless execution of their
               digital strategies while optimizing their online presence with
               strategic SEO from the ground u
@@ -58,11 +61,11 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-col-1 md:grid-cols-3 gap-4">
-        <div className="col-span-1 object-center">
-          <Image alt="image" src="/assets/images/3d__2.png" width={391} height={407} />
+      <div className="flex flex-col md:flex-row justify-between  align-middle gap-2 w-full">
+        <div className="md:w-1/2">
+          <Image alt="image" src="/assets/images/3d__2.png" className="w-full" width={391} height={407} />
         </div>
-        <div className="col-span-2 __statement__section ms:p-23">
+        <div className="flex flex-col gap-2 md:1/2">
           <h1 className="__title">
             The Unseen Potential of Building Your Next Idea with Us
           </h1>
@@ -78,8 +81,10 @@ function Home() {
             gems within your idea
           </p>
 
-          <Link href="/" className="__action action__solid __btn__margin">
-            Read more
+          <Link href="/" className="m-auto md:m-0">
+            <button className="w-4/6 bg-green-700 px-4 py-2 text-white rounded-md">
+              Read more
+            </button>
           </Link>
         </div>
       </div>
